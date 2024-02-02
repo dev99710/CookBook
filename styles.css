@@ -1,0 +1,125 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+header {
+  background-color: #343a40; /* Dark gray header */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0; /* Increased padding */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem; /* Larger font size for the header */
+}
+/* Add these styles for the h1 tag at the end of your existing styles */
+
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Larger font size for the header */
+}
+
+header #homeLink {
+  text-decoration: none;
+  color: #fff; /* Set the text color to white */
+  transition: color 0.3s ease-in-out;
+}
+
+header #homeLink:hover {
+  color: #ff6347; /* Change text color on hover, you can choose your own color */
+}
+
+
+#searchInput {
+  width: 60%; /* Adjusted width for a more centered input */
+  padding: 0.5rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5rem; /* Increased padding */
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem; /* Increased margin */
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 200px; /* Increased image height */
+  object-fit: cover;
+  border-bottom: 2px solid #343a40; /* Dark gray border */
+}
+
+.recipe-details {
+  padding: 1.5rem; /* Increased padding */
+}
+
+.recipe-title {
+  font-size: 1.4rem; /* Larger title */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+.recipe-instructions {
+  font-size: 1rem; /* Larger font size for instructions */
+  color: #666;
+}
+
+/* Updated styles for the selected recipe section */
+#selectedRecipe {
+  margin: 1.5rem;
+}
+
+#selectedRecipe .recipe-img {
+  width: 100%;
+  max-height: 400px; /* Set the maximum height as needed */
+  object-fit: contain; /* Updated object-fit property */
+  border-bottom: 2px solid #343a40; /* Dark gray border */
+}
+
+#selectedRecipe .recipe-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#selectedRecipe .recipe-details {
+  padding: 1.5rem;
+}
+
+#selectedRecipe .recipe-instructions {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Add this style at the end of your existing styles */
+
+/* Hide and show styles */
+.hidden {
+  display: none;
+}
